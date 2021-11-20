@@ -1,0 +1,311 @@
+:root {
+  --dark-color: #333333;
+  --secondary-color: #cecbcb;
+  --secondary-color-hover: #FFFFFF;
+  --primary-color: #E34140;
+  --light-color: #FADDDD;
+  --cover1: #EEEFFE;
+  --links: #1472D0;
+  --cver2: #FBFBFD;
+}
+.all{
+  max-width: 100vw;
+  background: var(--secondary-color-hover);
+}
+
+/*! ------------------------page -1------------- */
+
+/*! -----------------------nav bar-------------- */
+
+.navbar{
+  font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5vh;
+  background: var(--dark-color);
+  font-size: calc(0.45vh + 0.45vw);
+  position: fixed;
+  z-index: 3;
+}
+
+.navbar a, .navbar img{
+  text-decoration: none;
+  padding: 1.35rem;
+  color: var(--secondary-color);
+}
+.navbar img:first-child, .navbar img:last-child{
+  height: calc(1.1vh + 1.1vw + 3.3rem);
+}
+.navbar a:hover{
+  color: var(--secondary-color-hover);
+}
+.navbar2{
+  font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 9.5vh;
+  padding-top: 5vh;
+  width: 100%;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar2 a{
+  text-decoration: none;
+  color: var(--light-color);
+  font-size: calc(0.5vh + 0.5vw);
+  font-weight: 600;
+  padding: 0.1rem;
+}
+.navbar2 a:last-child:hover{
+  text-decoration: underline;
+}
+
+
+
+/*!-----------------------page-1- cover ---------- */
+
+.page-1-part2{
+  background: var(--cover1);
+  height: 73vh;
+  text-align: center;
+}
+.top{
+  padding-top: calc(1.1vh + 1.1vw);
+}
+  .top img{
+    height: calc(3.1vh + 3.1vw);
+}
+.text-top-page1 h1{
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: calc(1.15vh + 1.15vw + 1.15rem);
+  margin-top: 1.2vh;
+  margin-bottom: 1vh;
+  
+}
+.text-top-page1 a{
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  font-size: calc(0.46vh + 0.46vw + 0.46rem);
+  color: var(--links);
+
+}
+.text-top-page1 a:hover{
+  text-decoration: underline;
+}
+.bottum-page1{
+  max-width: 100vw;
+  display: flex;
+  margin-top: calc(1.3vh + 1.3vw);
+  justify-content: center;
+  align-items: center;
+  
+}
+.imgpage1 img{
+  height: 39vh;
+  padding-right: calc(1.2vh + 1.2vw);
+  animation-name: animate-logo;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+@keyframes animate-logo {
+  from{
+    transform: rotate(-10deg);
+  }
+}
+/*! ---------page-2------------------------------ */
+.page2top, .page3top{
+  background: var(--secondary-color-hover);
+  height: calc(0.4vh + 0.4vw);
+} 
+.page-2{
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  height: 73vh;
+  text-align: center;
+  background: var(--cver2);
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow: hidden;
+  
+}
+.page-2 h1, .page-3 h1{
+  color: #1D1D1F;
+  margin: 0;
+  padding-top: calc(1.1vh + 1.1vw + 1.1rem);
+  font-size: calc(1.15vh + 1.15vw + 1.15rem);
+}
+.page-2 h4, .page-3 h4{
+  color: #1D1D1F;
+  padding-top: calc(0.1vh + 0.1vw + 0.1rem);
+  padding-bottom: calc(0.4vh + 0.4vw + 0.4rem);
+  font-size: calc(0.6vh + 0.6vw + 0.6rem);
+  font-weight: lighter;
+}
+.page-2 a, .page-3 a, .linkmiddle a{
+  text-decoration: none;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--links);
+  font-size: calc(0.45vh + 0.45vw + 0.45rem);
+  padding-left: calc(0.6vh + 0.6vw + 0.6rem);
+}
+.page-2 a:hover, .page-3 a:hover, .linkmiddle a:hover{
+  text-decoration: underline;
+}
+.page2img, .page3img{
+  margin-top: calc(1.5vh + 1.5vw);
+  padding-top: 0;
+}
+.page2img img, .page3img img{
+  width: 37vw;
+  height: 47.5vh;
+  object-fit: fill;
+  
+}
+/*! ---------page-3------------------------------ */
+.page-3{
+  max-width: 100vw;
+  height: 73vh;
+  text-align: center;
+  background: #35283C;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow: hidden;
+}
+.page-3 h1{
+  color: var(--cover1);
+  font-size: calc(2vh + 2vw);
+  font-weight: 550;
+}
+#secondhp3{
+  color: #FCC0E9;
+}
+.page3img img{
+  width: 60vw;
+}
+
+/*! ---------page-456------------------------------ */
+.page-456{
+  color: var(--dark-color);
+  margin: calc(0.4vh + 0.4vw);
+  max-width: 100vw;
+  height: 185vh;
+  overflow: hidden;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 49.6%);
+  grid-template-rows: repeat(3, 33%);
+  grid-gap: calc(0.4vh + 0.4vw);
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+.MacBookProsec{
+grid-column: 1 / span 1;
+grid-row: 1 / span 1;
+background: var(--cver2);
+}
+.AppleWatchsec{
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  background: #F5F5F7;
+}
+.HomePodsec{
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+  background: var(--cver2);
+}
+.arcadesec{
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+  background: var(--cver2);
+}
+.cardsec{
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
+  background: var(--cver2);
+}
+.TVsec{
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+  background: var(--cver2);
+}
+
+.MacBookPro{
+  font-size: calc(1.4vh + 1.4vw);
+  font-weight: 550;
+  margin: 0;
+  margin-top: calc(1.5vh + 1.5vw);
+}
+.Superchargedforpros{
+  font-size: calc(0.7vh + 0.7vw);
+  font-weight: lighter;
+  padding: calc(0.3vh + 0.3vw);
+  
+  
+}
+.linkmiddle a{
+  font-size: calc(0.6vh + 0.6vw);
+  padding-left: calc(0.5vh + 0.5vw);
+}
+.page4img img{
+  padding-top: calc(4vh + 4vw);
+  width: 30vw;
+}
+.imgwatch img{
+  padding-top: calc(4vh + 4vw);
+  width: 35vw;
+}
+.imgpod img{
+  width: 40vw;
+}
+.imgarcad img{
+  width: 22vw;
+}
+.imgcard img{
+  width: 30vw;
+  padding-top: calc(1vh + 1vw);
+}
+.TVsec{
+  background-image: url(../image/promo_dickinson__c9ea4l2f5rki_large\ \(1\).jpg);
+}
+.tv1 img{
+  width: calc(3vh + 3vw);
+  height: calc(1vh + 1vw);
+  margin-top: calc(2vh + 2vw);
+}
+.tv2 img{
+  width: calc(9vh + 9vw);
+  height: calc(5vh + 5vw);
+  margin-top: calc(12vh + 12vw);
+}
+.pageend{
+  height: 84vh;
+  font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Apple Legacy Chevron", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #F5F5F7;
+  color: #A0A0A4;
+}
+.page3text{
+  width: 52.5vw;
+  margin-left: calc(16vh + 16vw);
+  padding-top: calc(0.44vh + 0.44vw);
+  padding-bottom: 0;
+  margin-bottom: calc(0.6vh + 0.6vw);
+}
+.page3text p{
+  padding-top: calc(0.4vh + 0.4vw);
+  font-size: calc(0.44vh + 0.44vw);
+}
+.page3img{
+  width: 53.5vw; 
+  margin-left: calc(15.6vh + 15.6vw);
+  margin-top: 0;
+  
+}
+.page3img img{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  text-align: center;
+  
+}
